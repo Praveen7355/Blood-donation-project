@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+<style>
+    .container{
+display: flex;
+align-items: center;
+justify-content: center;
+
+/*background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20201026/pngtree-scene-with-geometrical-forms-the-poster-model-minimal-background-render-image_437743.jpg);
+   */ }
+    .form{
+        background-color: #ffffff;
+        padding: 40px;
+     margin:60px;
+     border: 4px blue inset;
+     border-radius: 10%;
+opacity:0.6;
+  font-weight: bold;
+     
+}
+
+     h1{
+         position: relative;
+         left:70px;
+         text-shadow:transparent silver;
+         font-family:Impact, 'Arial Narrow Bold', sans-serif;
+         letter-spacing: 5px;
+         color:lawngreen;
+         z-index: auto;
+stroke-linecap: round ;
+     }
+     
+     label{
+         font-family:fantasy;
+         letter-spacing: 2px;
+         color:rgb(255, 0, 157);
+     }
+     input{
+         box-shadow: 0px 0px 3px 1px goldenrod ;
+
+     }input:focus{
+         box-shadow: 0px 0px 2px 1px red inset;
+     
+       }
+     button{
+border-color: rgb(8, 0, 255);
+border-radius: 6px;
+padding: 3px;
+margin:10px;
+position: relative;
+left:90px;
+border-radius: 10%;
+display: block;
+width: auto;
+font-family: cursive;
+     }
+     .fa fa-sign-in{
+         display: inline-block;
+     }
+</style></head>
+<body><div class="container">
+        <form class="form" action="login1.php" method="post" onsubmit="validate()">
+            <h1>
+                LOGIN
+            </h1>
+            <label for="name">USERNAME:  &nbsp;&nbsp;&nbsp; </label><input type="text" required id="name" name="name" spellcheck="true"><br><br>
+            
+<label for="password">PASSWORD:&nbsp;&nbsp;&nbsp;
+</label><input type="password" id="password" name="password" required ><br><br>
+<button class="fa fa-sign-in" type="submit" >LOGIN</button>
+       </form>
+    </div>
+</body>
+</html>

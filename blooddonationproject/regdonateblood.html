@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register to donate blood</title>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+        }
+        label ,p{
+         font-family:fantasy;
+         letter-spacing: 3px;
+         color:rgb(255, 0, 157);
+     }
+     input{
+         box-shadow: 0px 0px 3px 1px goldenrod ;
+
+     }input:focus{
+         box-shadow: 0px 0px 2px 1px red inset;
+     
+       }
+       h2{
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 2px;
+         color:rgb(255, 0, 157);
+       }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        form {
+            padding: 30px;
+            border: solid black 4px;
+            height: 100%;
+            width: 350px;
+            margin-top: 6%;
+            font-family: fantasy;
+            letter-spacing: 1px;
+            color:rgb(50, 50, 159);
+          
+
+
+        }
+         .r1
+        {
+            color:white;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="blood_donate.php"  method="post">
+            <center>
+                <h2>Fill Details</h2>
+            </center>
+            <label for="name">Name:&nbsp;&nbsp;&nbsp; </label>
+            <input type="text" name="fullname" placeholder="enter your fullname" required>
+            <br><br>
+            <label for="address">Address:</label>
+
+            <input type="text" name="address" id="" required> <br><br>
+            <label for="email">Email: &nbsp;&nbsp;
+
+            </label>
+            <input type="email" name="email" id="" placeholder="abc12@gmail.com" required> <br><br>
+
+            <label for="id">Id: &nbsp;&nbsp;
+
+            </label>
+            <input type="number" name="id" id="" placeholder="Create a Id" required> <br><br>
+
+            <label for="bloodgroup">Blood Group:</label>
+            <select  id="" required>
+                <option value="A +" >A positive</option>
+                <option value="">A negative</option>
+                <option value="">B positve</option>
+                <option value="">B negative</option>
+                <option value="">AB positve</option>
+                <option value="">AB negative</option>
+                <option value="">O positive</option>
+                <option value="">o negative</option>
+            </select>
+            <br><br>
+            <label for="bloodgroup">Fill Blood group:</label>
+            <input type="text" name="bloodgroup" id="" required><br> <br>
+            <label for="dob">DOB:</label>
+            <input type="datetime-local" name="" id=""><br><br>
+            <p>Have you ever donated blood before?</p>
+            <input type="radio" name="yes" id="" >Yes <input type="radio" name="no" id="">No
+            <br><br><br><button type="reset">Reset</button><br>
+            <center><input type="submit" name="submit" class="r1"></center>
+        </form>
+    </div>
+</body>
+
+</html>
